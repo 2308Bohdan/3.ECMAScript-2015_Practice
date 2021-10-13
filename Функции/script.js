@@ -1,5 +1,4 @@
 "use strict";
-
 //Задание №1.
 function mul(...rest) {
 	let res = rest.filter((value) => typeof value === "number");
@@ -13,6 +12,7 @@ function mul(...rest) {
 console.log(mul(1, "str", 2, 3, true)); // 6
 console.log(mul(null, "str", false, true)); // 0
 
+
 //Задание №2.
 let calc = {
 	x: 2,
@@ -22,6 +22,7 @@ let calc = {
 	}
 };
 setTimeout(calc.mul(), 2000); // 6, через 2 секунды
+
 
 //Задание №3.
 let server = {
@@ -42,6 +43,5 @@ let client = {
 	}
 };
 client.calc(123);
-
 console.log(client.result); // "123"
 console.log(typeof client.result); // "string"
