@@ -2,8 +2,6 @@
 
 //Задание №1.
 function mul(...rest) {
-	
-	
 	let res = rest.filter((value) => typeof value === "number");
 	if (res.length === 0) {
 		res = 0;
